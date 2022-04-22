@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    background-color: #F9F9D0;
+}
+
+.main-game {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genius {
+    display: grid;
+    grid-template-areas: 'green red'
+        'yellow blue';
+    grid-gap: 10px;
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    border-radius: 100%;
+    width: 700px;
+    height: 700px;
+}
+
+footer {
+    margin-top: 10px;
+    text-align: center;
+}
