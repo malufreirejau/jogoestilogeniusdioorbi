@@ -1,10 +1,15 @@
 body {
     margin: 0;
-    background-color: #F9F9D0;
+    background-color: #201D20;
+}
+
+h1 {
+    text-align: center;
+    color: #FFFFFF;
 }
 
 .main-game {
-    height: 90vh;
+    height: 80vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -13,17 +18,60 @@ body {
 
 .genius {
     display: grid;
-    grid-template-areas: 'green red'
-        'yellow blue';
+    grid-template-areas: 'verde vermelho'
+        'amarelo azul';
     grid-gap: 10px;
-    border: 1px solid #FFFFFF;
+    border: 10px solid #FFFFFF;
     background-color: #FFFFFF;
     border-radius: 100%;
     width: 700px;
     height: 700px;
 }
 
+.blue {
+    grid-area: azul;
+    background-color: #0D43FA;
+    border-bottom-right-radius: 100%;
+}
+
+.yellow {
+    grid-area: amarelo;
+    background-color: #FBFB0D;
+    border-bottom-left-radius: 100%;
+}
+
+.green {
+    grid-area: verde;
+    background-color: #5ABE2B;
+    border-top-left-radius: 100%;
+}
+
+.red {
+    grid-area: vermelho;
+    background-color: #EE2118;
+    border-top-right-radius: 100%;
+}
+
 footer {
-    margin-top: 10px;
+    margin-top: 15px;
     text-align: center;
+    font-family: sans-serif;
+    color: #FFFFFF;
+}
+
+a:link {
+    color:#FFFFFF;
+    text-decoration:underline;
+}
+a:visited {
+    color:#FFFFFF;
+    text-decoration:underline;
+}
+a:hover {
+    color:#5ABE2B;
+    text-decoration:underline;
+}
+a:active {
+    color:#5ABE2B;
+    text-decoration:underline;
 }
