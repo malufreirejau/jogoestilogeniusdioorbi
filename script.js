@@ -37,7 +37,7 @@ let checkOrder = () => {
     }
 
     if(clickedOrder.length == order.length) {
-        alert('Pontuação: ${score}\nVocê acertou! Iniciando próximo nível');
+        alert(`Pontuação: ${score}\nVocê acertou! Iniciando próximo nível`);
         nextLevel();
     }
 }
@@ -70,7 +70,7 @@ let nextLevel = () => {
 }
 
 let gameOver = () => {
-    alert('Pontuação: ${score}!:\nVocê perdeu o jogo!\nClique em OK para iniciar um novo jogo');
+    alert(`Pontuação: ${score}!:\nVocê perdeu o jogo!\nClique em OK para iniciar um novo jogo`);
     order = [];
     clickedOrder = [];
 
@@ -84,9 +84,9 @@ let playGame = () => {
     nextLevel();
 }
 
-green.addEventListener('click', click(0));
-red.addEventListener('click', click(1));
-yellow.addEventListener('click', click(2));
-blue.addEventListener('click', click(3));
+green.onclick = () => click(0);
+red.onclick = () => click(1);
+yellow.onclick = () => click(2);
+blue.onclick = () => click(3);
 
 playGame();
